@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FX Rebate Service</title>
+    <!-- Enlace a las fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <!-- Enlace al archivo de estilos CSS (sube un nivel) -->
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* Ajustes específicos para el árabe (RTL) */
+        body { font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .footer-links a { margin-left: 0; margin-right: 24px; }
+        .step-list li { padding-left: 0; padding-right: 28px; }
+        .step-list li::before { left: auto; right: 0; }
+        .alert-note { border-left: none; border-right: 4px solid #f59e0b; }
+        .email-note { border-left: none; border-right: 4px solid var(--blue); }
+        .code-block { border-left: none; border-right: 3px solid var(--blue); direction: ltr; text-align: left; }
+        .warning-box ul { padding-left: 0; padding-right: 20px; }
+        .alert-note ul { margin-left: 0; margin-right: 20px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo"><div class="logo-text">FX <span>Rebate Service</span></div></a>
+            <nav>
+                <ul>
+                    <li><a href="#cashback">حاسبة الكاش باك</a></li>
+                    <li><a href="#promociones">العروض الترويجية</a></li>
+                    <li><a href="#como-empezar">العملية</a></li>
+                    <li><a href="#faq">الأسئلة الشائعة</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <select class="lang-selector" onchange="window.location.href=this.value;">
+                    <option value="../index.html">🇪🇸 ES</option>
+                    <option value="../en/index.html">🇬🇧 EN</option>
+                    <option value="../pt/index.html">🇵🇹 PT</option>
+                    <option value="../ms/index.html">🇲🇾 MS</option>
+                    <option value="../id/index.html">🇮🇩 ID</option>
+                    <option value="../it/index.html">🇮🇹 IT</option>
+                    <option value="index.html" selected>🇸🇦 AR</option>
+                    <option value="../fr/index.html">🇫🇷 FR</option>
+                    <option value="../vi/index.html">🇻🇳 VI</option>
+                    <option value="../tl/index.html">🇵🇭 TL</option>
+                    <option value="../th/index.html">🇹🇭 TH</option>
+                    <option value="../zh-CN/index.html">🇨🇳 ZH</option>
+                    <option value="../ur/index.html">🇵🇰 UR</option>
+                    <option value="../hi/index.html">🇮🇳 HI</option>
+                    <option value="../sw/index.html">🇰🇪 SW</option>
+                    <option value="../tr/index.html">🇹🇷 TR</option>
+                </select>
+                <a href="https://headway.partners/user/signup?hwp=4e0b74" target="_blank" class="btn-primary">فتح حساب</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="badge-sticky-container">
+                <div class="hero-badge">
+                    <div class="logo-oval">
+                        <img src="https://hw.online/logo-white.svg" alt="Headway" class="headway-logo">
+                    </div>
+                    <span>وسيط معتمد</span>
+                </div>
+            </div>
+
+            <div class="infinity-section">
+                <div class="infinity-wrapper">
+                    <svg class="infinity-svg" viewBox="0 0 700 260" preserveAspectRatio="xMidYMid meet">
+                        <defs>
+                            <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#00bfff"/>
+                                <stop offset="35%" style="stop-color:#00e5ff"/>
+                                <stop offset="65%" style="stop-color:#ff8a00"/>
+                                <stop offset="100%" style="stop-color:#ffb347"/>
+                            </linearGradient>
+                            <path id="infinityPath" d="M 100 130 C 100 40, 260 40, 350 130 C 440 220, 600 220, 600 130 C 600 40, 440 40, 350 130 C 260 220, 100 220, 100 130 Z" />
+                        </defs>
+                        <use href="#infinityPath" class="infinity-path" />
+                        <circle class="travel-dot" r="6" cx="0" cy="0">
+                            <animateMotion dur="4s" repeatCount="indefinite" rotate="auto">
+                                <mpath href="#infinityPath" />
+                            </animateMotion>
+                        </circle>
+                    </svg>
+                </div>
+            </div>
+
+            <h1>تداول واحصل على الكاش باك</h1>
+            <p>تداول مع Headway واسترد ما يصل إلى 39.9% من السبريد الخاص بك. مدفوعات يومية تلقائية مباشرة إلى محفظتك، دون تغيير ظروف التداول الخاصة بك.</p>
+            
+            <div class="stats-grid">
+                <div class="stat-card"><h3>39.9%</h3><p>السبريد المسترد</p></div>
+                <div class="stat-card"><h3>يومياً</h3><p>تكرار الدفع</p></div>
+                <div class="stat-card"><h3>بدون تغيير</h3><p>شروط الوسيط</p></div>
+            </div>
+            <a href="#cashback" class="btn-primary" style="padding:14px 32px;font-size:1rem">احسب الكاش باك الخاص بي</a>
+        </div>
+    </section>
+
+    <section class="partner-section">
+        <div class="container">
+            <div class="partner-banner">
+                <div class="partner-info">
+                    <h2>مطلوب معرف الشريك (Partner ID)</h2>
+                    <p>استخدم معرف الشريك الخاص بنا عند التسجيل في Headway لربط حسابك والحصول على الكاش باك.</p>
+                </div>
+                <div class="id-display" onclick="copyID()" title="نسخ المعرف">
+                    <div class="number" id="partnerId">6293703</div>
+                    <div class="text">نسخ<br>إلى الحافظة</div>
+                </div>
+            </div>
+            <div class="alert-note">
+                <strong>هل لديك حساب Headway بالفعل؟</strong> يمكنك ربطه عن طريق إرسال بريد إلكتروني إلى <em>partner@hw.site</em> لطلب إرفاق حسابك بمعرف الشريك <strong>6293703</strong>. المتطلبات:
+                <ul>
+                    <li>1. يجب أن يكون الحساب موثقاً.</li>
+                    <li>2. يجب ألا يكون قد تم التداول به في آخر شهرين.</li>
+                    <li>3. يجب أن يكون الحساب مسجلاً بعد 01.11.2026.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="calc-section" id="cashback">
+        <div class="container">
+            <div class="section-header">
+                <h2>حاسبة الكاش باك</h2>
+                <p style="color:var(--text-muted)">احسب الكاش باك المقدر لكل صفقة مغلقة (round turn).</p>
+            </div>
+            <div class="calc-layout">
+                <div>
+                    <div class="form-group">
+                        <label for="tipoCuenta">نوع الحساب</label>
+                        <select id="tipoCuenta" class="form-control">
+                            <option value="standard">Standard</option>
+                            <option value="pro">Pro</option>
+                            <option value="cent">Cent (0.01)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="activo">الأداة المالية</label>
+                        <select id="activo" class="form-control">
+                            <option value="EURUSD">EUR/USD</option>
+                            <option value="GBPUSD">GBP/USD</option>
+                            <option value="XAUUSD">XAU/USD</option>
+                            <option value="XTIUSD">XTI/USD</option>
+                            <option value="BTC">BTC</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="lotes">الحجم (اللوتات)</label>
+                        <input type="number" id="lotes" class="form-control" value="1" min="0.01" step="0.01">
+                    </div>
+                </div>
+                <div class="calc-result">
+                    <h4>الكاش باك المقدر (يومياً)</h4>
+                    <div class="value" id="resultado">$0.00</div>
+                    <p class="note">* المبلغ النهائي يعتمد على السبريد الحقيقي للسوق وسياسات الوسيط.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promos-section" id="promociones">
+        <div class="container">
+            <div class="section-header"><h2>عروض الوسيط</h2></div>
+            <div class="promos-grid">
+                <div class="promo-card">
+                    <div class="promo-header bg-orange">$150 USD</div>
+                    <div class="promo-body">
+                        <h3>بونص بدون إيداع</h3>
+                        <p>ابدأ التداول بدون مخاطرة مع بونص ترحيبي حصري للتسجيلات الجديدة.</p>
+                        <a href="https://headway.partners/landings/en/bonus-150/?hwp=4e0b74" target="_blank" class="btn-outline">المطالبة بالبونص</a>
+                    </div>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-header bg-blue">+75%</div>
+                    <div class="promo-body">
+                        <h3>بونص على الإيداع</h3>
+                        <p>زد رأس مال التداول الخاص بك. تكافئ Headway بنسبة إضافية على إيداعك الأول.</p>
+                        <a href="https://headway.partners/landings/en/deposit-bonus-2/?hwp=4e0b74" target="_blank" class="btn-outline">مزيد من المعلومات</a>
+                    </div>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-header bg-green">البطولات</div>
+                    <div class="promo-body">
+                        <h3>مسابقات الحساب التجريبي</h3>
+                        <p>أظهر مهاراتك. تنافس مع متداولين آخرين دون المخاطرة برأس مال حقيقي واربح جوائز.</p>
+                        <a href="https://headway.partners/promo/demo-contests/?hwp=4e0b74" target="_blank" class="btn-outline">شارك</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="steps-section" id="como-empezar">
+        <div class="container">
+            <div class="section-header"><h2>كيف أحصل على الكاش باك الخاص بي؟</h2></div>
+            <div class="steps-layout">
+                <div class="step-box">
+                    <h3>مستخدمون جدد</h3>
+                    <ul class="step-list">
+                        <li>
+                            افتح حساب <strong>Standard</strong> مع Headway من خلال الرابط الرسمي.
+                            <br>
+                            <a href="https://headway.partners/accounts/?hwp=4e0b74" target="_blank" class="btn-open-account">فتح حساب Standard</a>
+                        </li>
+                        <li>أرسل لنا رقم حساب MT (MetaTrader) الخاص بك لتفعيل التتبع.</li>
+                        <li>تداول كالمعتاد. يتم حساب الكاش باك على الصفقات المغلقة من اليوم الأول.</li>
+                    </ul>
+                    <div class="contact-box">
+                        <p>الاتصال للتفعيل:</p>
+                        <p style="margin-bottom:10px;">أرسل لنا حسابك عبر أي من هذه الوسائل:</p>
+                        <div class="contact-icons">
+                            <a href="https://wa.me/message/BDZP3NJMTY5VG1" target="_blank" class="contact-icon" title="WhatsApp">
+                                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            </a>
+                            <a href="https://t.me/fxrebateservice" target="_blank" class="contact-icon" title="Telegram">
+                                <svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                            </a>
+                            <a href="mailto:fxrebateservice@proton.me" class="contact-icon" title="Email">
+                                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-box">
+                    <h3>لدي بالفعل حساب Headway</h3>
+                    <ul class="step-list">
+                        <li>أرسل بريداً إلكترونياً إلى <strong>partner@hw.site</strong> مع الطلب التالي:</li>
+                        <div class="code-block">"Please, attach my trading account to Partner ID 6293703."</div>
+                        <li>بمجرد إرسال البريد الإلكتروني، أرسل لنا رقم حساب MT الخاص بك.</li>
+                    </ul>
+                    <div class="warning-box">
+                        <strong>متطلبات صارمة من الوسيط:</strong>
+                        <ul>
+                            <li>يجب أن يكون الحساب موثقاً.</li>
+                            <li>لا يوجد نشاط تداول في آخر شهرين.</li>
+                            <li>مسجل بعد 01.11.2026.</li>
+                        </ul>
+                    </div>
+                    <div class="email-note">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <div><strong>ملاحظة مهمة:</strong> يجب إرسال البريد الإلكتروني من نفس البريد الإلكتروني المستخدم لتسجيل حساب Headway.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header"><h2>الأسئلة الشائعة</h2></div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question"><div class="faq-text">ما هو FX Rebate Service؟</div> <span class="faq-icon">+</span></div>
+                    <div class="faq-answer">نحن خدمة تقدم فرصة للحصول على جزء من السبريد الذي تدفعه مقابل صفقاتك ككاش باك.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><div class="faq-text">من يدفع الكاش باك؟</div> <span class="faq-icon">+</span></div>
+                    <div class="faq-answer">نحن نحصل على خصم (rebate) من الوسيط ونعيد لك 95% من تلك العمولة ككاش باك.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><div class="faq-text">هل يؤثر على ظروف التداول الخاصة بي؟</div> <span class="faq-icon">+</span></div>
+                    <div class="faq-answer">لا. تظل الفروقات (spreads) والتنفيذ والرافعة المالية وظروف الحساب كما هي تماماً.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><div class="faq-text">هل أتلقى كاش باك على الصفقات الخاسرة؟</div> <span class="faq-icon">+</span></div>
+                    <div class="faq-answer">نعم. يتم حساب الكاش باك على حجم التداول، بغض النظر عما إذا كانت الصفقة رابحة أم خاسرة.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><div class="faq-text">متى يتم الدفع؟</div> <span class="faq-icon">+</span></div>
+                    <div class="faq-answer">تتم معالجة المدفوعات يومياً عند منتصف الليل (بتوقيت خادم MetaTrader).</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><div class="faq-text">ما هي شروط الحصول على الكاش باك؟</div> <span class="faq-icon">+</span></div>
+                    <div class="faq-answer">يجب أن يكون الحساب مسجلاً تحت معرف الشريك (Partner ID) الخاص بنا ويجب إغلاق الصفقات.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo" style="color:#fff">
+                    <div class="logo-text" style="color:#fff">FX <span style="color:#3b82f6">Rebate Service</span></div>
+                </div>
+                <div class="footer-links">
+                    <a href="#">الشروط والأحكام</a>
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">تحذير المخاطر</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 FX Rebate Service. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript (sube un nivel) -->
+    <script src="../script.js"></script>
+</body>
+</html>
